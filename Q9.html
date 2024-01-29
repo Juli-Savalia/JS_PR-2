@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4</title>
+</head>
+
+<body>
+    <!--  Write a JavaScript program to find max of 4 number using nested if.. -->
+    <script type="text/javascript">
+        let a = parseInt(prompt("Enter the value of a:-"));
+        let b = parseInt(prompt("Enter the value of b:-"));
+        let c = parseInt(prompt("Enter the value of c:-"));
+        let d = parseInt(prompt("Enter the value of d:-"));
+
+        if(a>b)
+        {
+            if(a>c)
+            {
+                if(a>d)
+                {
+                    document.write("<h1>A is max...</h1>");
+                }
+                else
+                {
+                    document.write("<h1>D is max...</h1>");
+                }
+            }
+            else
+            {
+                if(c>d)
+                {
+                    document.write("<h1>C is max...</h1>");
+                }
+                else
+                {
+                    document.write("<h1>D is max...</h1>");
+                }
+            }
+        }
+        else{
+            if(b>c)
+            {
+                if(b>d)
+                {
+                    document.write("<h1>B is max...</h1>");
+                }
+                else{
+                    document.write("<h1>D is max...</h1>");
+                }
+            }
+            else{
+                if(c>d)
+                {
+                    document.write("<h1>C is max...</h1>");
+                }
+                else{
+                    document.write("<h1>D is max...</h1>");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

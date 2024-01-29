@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6</title>
+</head>
+<body>
+    <!-- Write a Javascript program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following
+Percentage >= 90% : Grade A
+Percentage >= 80% : Grade B
+Percentage >= 70% : Grade C
+Percentage >= 60% : Grade D 
+Percentage >= 50% : Grade E
+Percentage >= 40% : Grade F -->
+    <script type="text/javascript">
+        let phy = parseInt(prompt("Enter the marks obtained in physics"));
+        let chem = parseInt(prompt("Enter the marks obtained in chem"));
+        let bio = parseInt(prompt("Enter the marks obtained in biology"));
+        let maths = parseInt(prompt("Enter the marks obtained in maths"));
+        let comp = parseInt(prompt("Enter the marks obtained in computer"));
+        let per = (phy + chem + bio + maths + comp)*100/500;
+        alert(`your percentage is = ${per}`);
+
+        if(per >= 90)
+        {
+            document.write("<h1>Outstanding...</h1>");
+        }
+        else if(per >=80 && per<=90)
+        {
+            document.write("<h1>Excellent...</h1>");
+        }
+        else if(per >=70 && per<=80)
+        {
+            document.write("<h1>very good...</h1>");
+        }
+        else if(per >=60 && per<=70)
+        {
+            document.write("<h1>Good...</h1>");
+        }
+        else if(per >=50 && per<=60)
+        {
+            document.write("<h1>you have to work hard...</h1>");
+        }
+        else
+        {
+            document.write("<h1>BETTER LUCK NEXT TIME...</h1>");
+        }
+
+
+    </script>
+</body>
+</html>

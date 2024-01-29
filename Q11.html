@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q11</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Write a JavaScript program to create basic calculator using ledder if else.
+        var a = parseInt(prompt("Enter the value of a :-"));
+        var b = parseInt(prompt("Enter the value of b :-"));
+
+        var ch = prompt("Enter any operator to perform basic calculations:- + - * /");
+
+        if(ch=='+')
+        {
+            document.write("<h2>Your addition is :- </h2>"+(a+b));
+        }
+         else if(ch=='-')
+        {
+            document.write("<h2>Your subtraction is :- </h2>"+(a-b));
+        }
+        else if(ch=='*')
+        {
+            document.write("<h2>Your multiplication is :- </h2>"+(a*b));
+        }
+        else if(ch=='/')
+        {
+            document.write("<h2>Your division is :- </h2>"+(a/b));
+        }
+        else{
+            document.write("<h2>Invalid operator.. </h2>");
+        }
+
+    </script>
+</body>
+</html>
